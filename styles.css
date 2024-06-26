@@ -68,15 +68,19 @@ header ul li a {
     }
 
     header {
-        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     header ul {
-        display: block;
+        display: flex;
         width: 100%;
-        padding: 10px 0;
+        padding: 0;
+        margin: 0;
+        gap: 0;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 
     header ul li {
@@ -90,6 +94,13 @@ header ul li a {
 
     .hrHeader {
         width: 100%;
+    }
+}
+@media screen and (max-width: 1160px) {
+    header ul {
+        font-size: 16px;
+        width: auto;
+        align-items: flex-start;
     }
 }
 /*------------------------------------------------ fim do header ------------------------------------------------- */
@@ -445,7 +456,7 @@ header ul li a {
 
 /*------------------------------------------------ fim da section 3 ------------------------------------------------- */
 .section4 {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 .section4 h1 {
@@ -591,7 +602,7 @@ textarea::placeholder {
     .contato {
         background-color: #00305B;
         height: 600px;
-        width: 420px;
+        width: 95%;
         border-radius: 40px;
         margin: 0 auto;
         padding: 50px;
@@ -665,6 +676,7 @@ footer div p {
     text-align: center;
     font-weight: 200;
     font-size: 14px;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {
@@ -687,5 +699,6 @@ footer div p {
     }
     footer div p {
         font-size: 11px;
+        text-align: justify;
     }
 }
