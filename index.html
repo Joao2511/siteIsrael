@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="videoHeaderSec">
+        <video src="img/video2.mp4" autoplay muted loop id="backgroundVideo" class="videoSec"></video>
+        <header>
+            <img class="logoPc" src="img/logoHeader.png" class="logo" alt="Logo">
+            <img class="logoCel" src="img/logoMobile.png" class="logo" alt="Logo">
+            <ul>
+                <li class="nav-link"><a href="#home">Home</a></li>
+                <li class="nav-link"><a href="#sobre">Sobre nós</a></li>
+                <li class="nav-link"><a href="#portfolio">Portifólio</a></li>
+                <li class="nav-link"><a href="#contato">Contato</a></li>
+            </ul>
+            <img src="img/lupa.png" class="lupa" alt="Procurar">
+            
+        </header>
+
+        <hr class="hrHeader">
+        <section class="section1" id="home">
+            <h1>Capture momentos inesquecíveis,<br> fotografia que conta histórias.</h1>
+            <p>Deixe-nos eternizar suas memórias através das nossas lentes.</p>
+            <div class="botoes-container">
+                <button class="botaoSaiba">Saiba mais</button>
+                <button id="volumeButton" class="botaoSom">
+                    <img src="img/som.png" height="50px" id="volumeOnIcon" style="display:none;">
+                    <img src="img/mute.png" height="50px" id="volumeOffIcon">
+                </button>
+            </div>
+        </section>
+    </div>
+
+    <section class="section2" id="sobre">
+        <div class="conteudo">
+            <h1>Sobre Israel Cedraz</h1>
+            <p>Sou Israel Cedraz, especialista em eternizar momentos através da arte da fotografia e do vídeo. Conte
+                conosco para transformar seus momentos especiais em lembranças preciosas. Nosso trabalho vai além de
+                capturar imagens; nos dedicamos a contar histórias, transmitir emoções e preservar a essência de cada
+                instante vivido.
+            </p>
+            <h1>Por que nos escolher?</h1>
+            <div class="competencias">
+                <div class="xp">
+                    <img src="img/avaliacao.png" alt="">
+                    <p>Experiência e expertise no setor</p>
+                </div>
+                <div class="compromisso">
+                    <img src="img/satisfacao.png" height="55px" width="55px" alt="">
+                    <p>Compromisso com a qualidade e a satisfação do cliente</p>
+                </div>
+                <div class="criatividade">
+                    <img src="img/ideia.png" alt="">
+                    <p>Criatividade e inovação em cada projeto</p>
+                </div>
+                <div class="atendimento">
+                    <img src="img/atendimento.png" height="55px" width="55px" alt="">
+                    <p>Atendimento personalizado e dedicado às suas necessidades.</p>
+                </div>
+            </div>
+        </div>
+        <div class="carroselWrap">
+            <img src="img/carroselImg/anterior.png" id="anteriorBtn">
+            <div class="carrosel" id="carrosel">
+                <div>
+                    <span><img src="img/carroselImg/12.jpg"></span>
+                    <span><img src="img/carroselImg/15.jpg"></span>
+                    <span><img src="img/carroselImg/4.jpg"></span>
+                </div>
+                <div>
+                    <span><img src="img/carroselImg/10.jpg"></span>
+                    <span><img src="img/carroselImg/9.jpg"></span>
+                    <span><img src="img/carroselImg/16.jpg"></span>
+                </div>
+            </div>
+            <img src="img/carroselImg/proximo.png" id="proximoBtn">
+        </div>
+
+    </section>
+
+    <hr>
+
+    <section class="section3" id="portfolio">
+        <h1>Portfólio</h1>
+        <p>Conheça um pouco mais dos nossos projetos</p>
+        <div class="container">
+            <div class="divWrap">
+                <img src="img/port1.png" alt="">
+                <img src="img/port1.png" alt="">
+                <img src="img/port1.png" alt="">
+                <img src="img/port1.png" alt="">
+                <img src="img/port1.png" alt="">
+                <img src="img/port1.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section4" id="contato">
+        <h1>Entre em contato</h1>
+        <p>Estamos aqui para ajudar. Se você tiver alguma dúvida,
+            feedback ou estiver interessado em nossos serviços, entre
+            em contato conosco através do formulário abaixo ou pelos
+            meios de contato listados.
+        </p>
+        <div class="contato">
+            <p>Estou interessado em:</p>
+            <button class="fotografia">Fotografia</button>
+            <button class="filmagem">Filmagem</button>
+            <div>
+                <form class="formulario">
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    <input type="email" id="email" name="email" placeholder="Seu email" required>
+                    <textarea name="message" id="message" placeholder="Insira sua mensagem"></textarea>
+                </form>
+            </div>
+            <button class="botaoWhat"><img src="img/whatsapp.png" alt="">Mandar mensagem</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="containerFooter">
+            <div class="menu">
+                <ul>
+                    <a href="#home">
+                        <li>Home</li>
+                    </a>
+                    <a href="#sobre">
+                        <li>Sobre nós</li>
+                    </a>
+                    <a href="#portfolio">
+                        <li>Portfólio</li>
+                    </a>
+                    <a href="#contato">
+                        <li>Contato</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="logoFooter">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="sociais">
+                <img src="img/behance.png" height="50px" alt="">
+                <img src="img/instagram.png" height="35px" alt="">
+                <img src="img/whatsapp.png" height="35px" alt="">
+            </div>
+        </div>
+        <div>
+            <p>Direitos Autorais © 2024 Israel Cedraz. Todos os direitos reservados. O conteúdo deste site, incluindo
+                textos, imagens, gráficos, logotipos e vídeos, é de propriedade
+                exclusiva da Israel Cedraz e está protegido pelas leis de direitos autorais. Qualquer uso não
+                autorizado, incluindo reprodução, distribuição ou
+                modificação, é estritamente proibido.</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('volumeButton').addEventListener('click', function () {
+            var video = document.getElementById('backgroundVideo');
+            var volumeOnIcon = document.getElementById('volumeOnIcon');
+            var volumeOffIcon = document.getElementById('volumeOffIcon');
+            if (video.muted) {
+                video.muted = false;
+                volumeOnIcon.style.display = 'block';
+                volumeOffIcon.style.display = 'none';
+            } else {
+                video.muted = true;
+                volumeOnIcon.style.display = 'none';
+                volumeOffIcon.style.display = 'block';
+            }
+        });
+
+        let scrollContainer = document.querySelector(".carrosel");
+        let anteriorBtn = document.getElementById("anteriorBtn");
+        let proximoBtn = document.getElementById("proximoBtn");
+
+        proximoBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 300; // Aumente este valor para um scroll mais rápido
+        })
+
+        anteriorBtn.addEventListener("click", () => {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft -= 300; // Aumente este valor para um scroll mais rápido
+        })
+
+        // Função para rolar o carrossel automaticamente
+        function autoScroll() {
+            scrollContainer.style.scrollBehavior = "smooth";
+            scrollContainer.scrollLeft += 300; // Ajuste este valor conforme necessário
+            if (scrollContainer.scrollLeft + scrollContainer.clientWidth >= scrollContainer.scrollWidth) {
+                scrollContainer.scrollLeft = 0; // Volta para o início quando chegar ao fim
+            }
+        }
+
+        // Configura o intervalo para rolar automaticamente a cada 3 segundos (3000 milissegundos)
+        setInterval(autoScroll, 3000);
+
+        window.addEventListener('scroll', function() {
+            var section1 = document.getElementById('sobre');
+
+            var scrollPosition = window.scrollY;
+
+            // Ajuste aqui conforme necessário
+            var opacity1 = scrollPosition / 400; // Exemplo de ajuste da opacidade
+
+            section1.style.opacity = opacity1;
+        });
+
+    </script>
+</body>
+
+</html>
