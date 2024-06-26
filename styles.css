@@ -96,6 +96,7 @@ header ul li a {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 1160px) {
     header ul {
         font-size: 16px;
@@ -103,6 +104,7 @@ header ul li a {
         align-items: flex-start;
     }
 }
+
 /*------------------------------------------------ fim do header ------------------------------------------------- */
 .botaoSaiba {
     background-color: white;
@@ -194,10 +196,13 @@ header ul li a {
     overflow: hidden;
     border-bottom: 1.7px solid white;
 }
+
 .botoes-container {
     display: flex;
-    flex-direction: column; /* Por padrão, os botões são empilhados verticalmente */
+    flex-direction: column;
+    /* Por padrão, os botões são empilhados verticalmente */
 }
+
 @media screen and (max-width: 1160px) {
     .section1 h1 {
         font-size: 30px;
@@ -205,19 +210,21 @@ header ul li a {
         margin-bottom: 1.5rem;
         font-weight: 600;
     }
+
     .botaoSaiba {
         width: 130px;
         height: 40px;
         border-radius: 32px;
         font-size: 17px;
     }
-    
+
     .botaoSom {
         width: 60px;
         height: 60px;
         border-radius: 64px;
     }
 }
+
 @media screen and (max-width: 750px) {
     .section1 h1 {
         font-size: 18px;
@@ -225,29 +232,34 @@ header ul li a {
         margin-bottom: 1.3rem;
         font-weight: 600;
     }
+
     .section1>p {
         font-size: 16px;
         font-weight: 200;
         margin-bottom: 10px;
         min-width: 80%;
     }
+
     .botaoSaiba {
         width: 130px;
         height: 40px;
         border-radius: 32px;
         font-size: 17px;
     }
-    
+
     .botaoSom {
         width: 60px;
         height: 60px;
         border-radius: 64px;
     }
 }
+
 @media screen and (max-width: 330px) {
     .botoes-container {
-        flex-direction: row; /* Muda para layout horizontal quando a tela é menor que 390px */
-        justify-content: space-between; /* Distribui os botões igualmente na linha */
+        flex-direction: row;
+        /* Muda para layout horizontal quando a tela é menor que 390px */
+        justify-content: space-between;
+        /* Distribui os botões igualmente na linha */
     }
 
     .botaoSaiba {
@@ -256,13 +268,14 @@ header ul li a {
         border-radius: 32px;
         font-size: 17px;
     }
+
     .botaoSom {
         width: 50px;
         height: 50px;
         border-radius: 64px;
         margin-bottom: 100px;
     }
-    
+
 }
 
 /*------------------------------------------------ fim da section 1 ------------------------------------------------- */
@@ -325,6 +338,7 @@ header ul li a {
     justify-content: center;
     overflow: hidden;
     margin: 10% auto;
+    background-color: red;
 }
 
 #anteriorBtn,
@@ -375,19 +389,46 @@ header ul li a {
         display: flex;
         flex-direction: column;
     }
+
     .conteudo {
         margin: 20px auto;
         width: 95%;
     }
+
     .conteudo h1 {
         font-weight: 600;
         font-size: 1.5rem;
         text-align: center;
     }
-    .conteudo >p {
+
+    .conteudo>p {
         font-size: 12px;
         margin: 10px 15px;
         text-align: justify;
+    }
+
+    .carroselWrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        margin: 10% auto;
+        background-color: red;
+    }
+
+    .carrosel {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        width: 300px;
+        transition: scroll-left 0.3s ease-in-out;
+    }
+
+    #anteriorBtn,
+    #proximoBtn {
+        width: 30px;
+        cursor: pointer;
+        margin: 0px;
     }
 }
 
@@ -437,6 +478,7 @@ header ul li a {
     .divWrap img {
         width: 100%;
     }
+
     .divWrap {
         width: 70%;
     }
@@ -588,6 +630,7 @@ textarea::placeholder {
     font-family: "Poppins", sans-serif;
     font-size: 18px;
 }
+
 @media screen and (max-width: 1088px) {
     .contato {
         background-color: #00305B;
@@ -598,6 +641,7 @@ textarea::placeholder {
         padding: 50px;
     }
 }
+
 @media screen and (max-width: 750px) {
     .contato {
         background-color: #00305B;
@@ -608,14 +652,17 @@ textarea::placeholder {
         padding: 50px;
         margin-bottom: 50px;
     }
-    .filmagem{
+
+    .filmagem {
         margin-top: 20px;
     }
+
     .section4>p {
         text-align: justify;
         width: 90%;
         margin: 20px auto;
     }
+
     .botaoWhat {
         margin: 40px auto;
     }
@@ -684,19 +731,23 @@ footer div p {
         height: 30px;
     }
 }
+
 @media screen and (max-width: 750px) {
     .logoFooter img {
         height: 70px;
     }
+
     .menu ul a li {
         list-style: none;
         font-size: 16px;
         margin-top: 20px;
         margin-bottom: 5px;
     }
+
     .sociais {
         flex-direction: column;
     }
+
     footer div p {
         font-size: 11px;
         text-align: justify;
