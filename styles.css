@@ -338,7 +338,6 @@ header ul li a {
     justify-content: center;
     overflow: hidden;
     margin: 10% auto;
-    background-color: red;
 }
 
 #anteriorBtn,
@@ -413,7 +412,6 @@ header ul li a {
         justify-content: center;
         overflow: hidden;
         margin: 10% auto;
-        background-color: red;
     }
 
     .carrosel {
